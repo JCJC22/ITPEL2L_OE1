@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      First Ionic App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <img style="width: 300px; height: 150px;margin: 0.2em;" src="assets/icon/1.png" alt="app-logo">
+      <ion-card-subtitle>
+
+      </ion-card-subtitle>
+      <ion-card-title class="ttle">
+        My IONIC App
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
+
+<ion-content class="padding1">
+  <p>{{text}}</p>
+  <ion-button fill="outline" (click) = "onChangeText()">Change Text</ion-button>
+  <ion-button fill="outline" (click) = "onOriginalText()">Original Text</ion-button>
+</ion-content>
+
+<ion-content [fullscreen]="false">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>OE_1</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content>
